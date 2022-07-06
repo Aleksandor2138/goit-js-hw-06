@@ -27,6 +27,7 @@ button {
   list-style: none;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 .gallery__item:not(:last-child){
   margin-bottom: 20px;

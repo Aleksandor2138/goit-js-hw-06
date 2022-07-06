@@ -17,8 +17,6 @@ for (const ingredient of ingredients) {
   console.log(lists);
   items.after(lists);
 }
-// console.log(lists);
-// items.innerHTML =lists;
 // const ingredientsLists = ingredients.map(ingredient => `<li class="item">${ingredient}</li>`).join(' ');
 // console.log(ingredientsLists);
 // items.innerHTML = ingredientsLists;

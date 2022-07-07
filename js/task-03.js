@@ -18,3 +18,27 @@ console.log(items);
 const imgLists = images.map(image => `<li class="gallery__item"><img class="gallery__img" src="${image.url}" alt="${image.alt}"></li>`).join(' ');
 console.log(imgLists);
 items.innerHTML = imgLists;
+
+const gallery = document.querySelector(".gallery");
+gallery.style.cssText = `
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: -20px;
+  `;
+
+
+const galleryItems= document.querySelectorAll(".gallery__item");
+for (var i = 0, length = galleryItems.length; i < length; i++) {
+  galleryItems[i].style.marginBottom = "20px";
+};
+
+const galleryImgs = document.querySelectorAll(".gallery__img");
+for (var i = 0, length = galleryImgs.length; i < length; i++) {
+  galleryImgs[i].style.cssText = `
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  `;
+};

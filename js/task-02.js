@@ -15,7 +15,7 @@ for (const ingredient of ingredients) {
   lists.classList.add("item");
   lists.textContent = ingredient;
   console.log(lists);
-  items.after(lists);
+  items.append(lists);
 }
 // const ingredientsLists = ingredients.map(ingredient => `<li class="item">${ingredient}</li>`).join(' ');
 // console.log(ingredientsLists);

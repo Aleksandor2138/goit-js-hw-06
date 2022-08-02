@@ -1,8 +1,8 @@
 "use strict";
 
 let counterValue = 0;
-const add = document.querySelector("[data-action='decrement']");
-const remove = document.querySelector("[data-action='increment']");
+const add = document.querySelector("[data-action='increment']");
+const remove = document.querySelector("[data-action='decrement']");
 const output = document.querySelector("#value");
 
 const addClick = () => {

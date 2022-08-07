@@ -11,7 +11,7 @@ function getRandomHexColor() {
 let sizes = 20;
 
 const createBoxes = () => {
-  const amount = inputText.value; ;
+  const amount = inputText.value;
   if (amount <= 0 || amount % 1) {
     return alert(`Bведите, пожалуйста, целое число больше или равное 1!!!`);
   }
@@ -38,4 +38,3 @@ const destroyBoxes = () => {
 };
 createBtn.addEventListener('click', createBoxes);
 deleteBtn.addEventListener("click", destroyBoxes);
-
